@@ -1,0 +1,26 @@
+psql -U username -h localhost -p 5432 dbname
+#Connect to postgresql
+#reset password
+sudo passwd postgres
+
+#linux
+ssh -p 7822 username@example.com -L 5432:localhost:5432
+
+# bien vinh vien linux
+B1:sudo nano ~/.bashrc
+B2: export bien(var)
+B3:source ~/.bashrc
+
+# password smartcabinet database
+ems@1234
+
+
+hdmi_drive=1
+
+max_usb_current=1
+
+hdmi_group=2
+
+hdmi_mode=87
+
+hdmi_cvt 1024 600 60 6 0 0 0

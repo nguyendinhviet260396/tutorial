@@ -1,0 +1,43 @@
+Install pip
+Pip (Python Package Installer), official documentation for pip.
+
+Usually Python3 comes with pip preinstalled. If you get an error "pip command not found", use the following command to install pip:
+
+Download get-pip.py, make sure you're saving file to Desktop
+
+In your Command Prompt navigate to Desktop
+
+cd Desktop
+Execute get-pip.py
+
+python get-pip.py
+Now pip should work system wide.
+
+virtualenv
+In your Command Prompt enter:
+
+pip install virtualenv
+Launch virtualenv
+In your Command Prompt navigate to your project:
+
+cd your_project
+Within your project:
+
+virtualenv env
+Activate your virtualenv:
+
+on Windows, virtualenv creates a batch file
+
+\env\Scripts\activate.bat
+to activate virtualenv on Windows, activate script is in the Scripts folder :
+
+\path\to\env\Scripts\activate
+Example:
+
+C:\Users\'Username'\venv\Scripts\activate.bat
+#install package base
+pip install --upgrade pip setuptools wheel
+#Create file
+$ pip freeze > requirements.txt
+#run package
+pip install -r requirements.txt

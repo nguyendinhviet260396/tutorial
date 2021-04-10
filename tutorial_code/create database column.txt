@@ -1,0 +1,7 @@
+CREATE TABLE alarmtable (
+	id SERIAL PRIMARY KEY NOT NULL,,
+	device text NOT NULL,
+	type text NOT NULL,
+	discription text NOT NULL,
+	timestamp timestamp default NULL
+);
