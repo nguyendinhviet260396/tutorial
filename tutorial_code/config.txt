@@ -1,0 +1,44 @@
+
+#ethenet config 
+
+dtparam=spi=on
+dtoverlay=enc28j60
+
+#display config
+hdmi_drive=1
+
+max_usb_current=1
+
+hdmi_group=2
+
+hdmi_mode=87
+
+hdmi_cvt 1024 600 60 6 0 0 0
+
+
+#disable display
+
+
+sudo nano /etc/lightdm/lightdm.conf
+
+xserver-command=X -s 0 -p 0 -dpms
+
+# bàn phím ảo
+
+sudo apt-get update
+sudo apt-get upgrade
+
+sudo apt-get install matchbox-keyboard
+sudo reboot
+
+
+hdmi_drive=1
+max_usb_current=1
+hdmi_group=2
+hdmi_mode=87
+hdmi_cvt 1280 800 60 6 0 0 0
+
+
+#postgresql
+psql -h 127.0.0.1 -U postgres -p 5432
+
