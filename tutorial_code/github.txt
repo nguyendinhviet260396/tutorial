@@ -1,0 +1,13 @@
+git remote add origin https://github.com/nguyendinhviet260396/app-truyen.git
+git branch -M main
+git push -u origin main
+
+
+
+echo "# app-truyen" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/nguyendinhviet260396/app-truyen.git
+git push -u origin main
