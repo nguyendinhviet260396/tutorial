@@ -16,8 +16,12 @@ sudo cp /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime
 #b4: reboot device
 
 
+#ban phim ảo
+
+sudo apt install matchbox-keyboard
 
 #disable display
+
 hdmi_drive=1
 
 max_usb_current=1
