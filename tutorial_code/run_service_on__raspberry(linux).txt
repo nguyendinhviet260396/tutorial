@@ -21,3 +21,54 @@ sudo systemctl start myscript.service
 sudo systemctl stop myscript.service
 sudo systemctl enable myscript.service
 sudo systemctl status myscript.service
+
+
+sudo nano /lib/systemd/system/modbusTCP.service
+
+b2:
+[Unit]
+Description=My service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 -u modbusTCP.py
+WorkingDirectory=/home/pi/appControl
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
+
+b3:
+sudo systemctl start modbusTCP.service
+sudo systemctl stop modbusTCP.service
+sudo systemctl enable modbusTCP.service
+sudo systemctl status modbusTCP.service
+
+
+
+sudo nano /lib/systemd/system/app.service
+
+b2:
+[Unit]
+Description=My service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 -u main.py
+WorkingDirectory=/home/pi/appControl
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
+
+b3:
+sudo systemctl start app.service
+sudo systemctl stop app.service
+sudo systemctl enable app.service
+sudo systemctl status app.service
