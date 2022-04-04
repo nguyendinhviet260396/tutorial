@@ -27,7 +27,7 @@ sudo nano /lib/systemd/system/modbusTCP.service
 
 b2:
 [Unit]
-Description=My service
+Description=Modbus TCp
 After=network.target
 
 [Service]
@@ -53,7 +53,7 @@ sudo nano /lib/systemd/system/app.service
 
 b2:
 [Unit]
-Description=My service
+Description=App control
 After=network.target
 
 [Service]
