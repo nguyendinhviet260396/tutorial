@@ -84,3 +84,14 @@ https://pywebview.flowrl.com/guide/installation.html#dependencies
 
 
 sudo apt-get install xscreensaver
+mkdir ~/.matchbox
+
+sudo cp /usr/share/matchbox-keyboard/keyboard-lq1.xml ~/.matchbox/keyboard.xml
+
+sudo chown pi:pi ~/.matchbox/keyboard.xml
+
+mkdir ~/.matchbox
+
+sudo cp /usr/share/matchbox-keyboard/keyboard-lq1.xml ~/.matchbox/keyboard.xml
+
+sudo chown pi:pi ~/.matchbox/keyboard.xml
